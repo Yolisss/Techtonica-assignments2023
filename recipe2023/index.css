@@ -23,7 +23,20 @@
 
 .removebullets {
   list-style: none;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .removebullets2 {
   list-style: none;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.paragraph {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.paragraph2 {
+  margin-left: 150px;
+  margin-right: 150px;
 }
