@@ -7,3 +7,23 @@
 .centered-text {
   text-align: center;
 }
+.main-title {
+  padding: 500px;
+}
+
+.column {
+  /* //splits half and half: allows us to create two rows in this case */
+  flex: 50%;
+}
+
+/* Clear floats after the columns */
+.row {
+  display: flex;
+}
+
+.removebullets {
+  list-style: none;
+}
+.removebullets2 {
+  list-style: none;
+}
