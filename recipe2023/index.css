@@ -2,6 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 1080px;
+  padding-top: 5%;
 }
 
 .centered-text {
@@ -9,6 +10,9 @@
 }
 .main-title {
   padding: 500px;
+}
+.highlight-title {
+  padding-bottom: 10%;
 }
 
 .column {
@@ -22,7 +26,6 @@
 }
 
 .removebullets {
-  list-style: none;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -39,4 +42,9 @@
 .paragraph2 {
   margin-left: 150px;
   margin-right: 150px;
+}
+
+.last-section {
+  padding-top: 5%;
+  padding-bottom: 6%;
 }
