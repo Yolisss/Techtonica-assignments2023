@@ -1,0 +1,39 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1080px;
+  padding-top: 5%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.highlight-title {
+  padding-bottom: 10%;
+}
+
+.column {
+  /* //splits half and half: allows us to create two rows in this case */
+  flex: 50%;
+}
+
+/* Clear floats after the columns */
+.row {
+  display: flex;
+}
+
+.removebullets {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.paragraph {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.last-section {
+  padding-top: 5%;
+  padding-bottom: 6%;
+}
