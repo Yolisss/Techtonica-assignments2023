@@ -30,3 +30,6 @@ var label = document.createElement("label");
 label.htmlFor = "id";
 
 label.appendChild(document.createTextNode("creates label for checkbox"));
+
+myDiv.appendChild(checkbox);
+myDiv.appendChild(label);
