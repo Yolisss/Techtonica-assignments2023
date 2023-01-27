@@ -6,6 +6,8 @@ button.addEventListener("click", () => {
 });
 
 //DOM ON CHECKLIST
+
+let fetch = document.getElementById(checklist);
 //let's create a list item and store in a variable
 let newList = document.createElement("li");
 
@@ -13,4 +15,4 @@ let newList = document.createElement("li");
 newListItem.textContent = "Sirracha";
 
 //Add that ul as list child
-document.querySelector("ul").appendChild(newList);
+document.querySelector("ul").appendChild(checklist);
