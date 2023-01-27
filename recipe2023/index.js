@@ -32,7 +32,7 @@ let checkbox = document.createElement("input");
 
 function check(array) {
   for (let i = 0; i < array.length; i++) {
-    let((checkbox = document.createElement("input")));
+    let checkbox = document.createElement("input");
 
     checkbox.type = "checkbox";
     checkbox.name = "name";
