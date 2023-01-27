@@ -16,20 +16,38 @@ button.addEventListener("click", () => {
 
 // //Add that ul as list child
 // document.querySelector("ul").appendChild(checklist);
+const foodList = [
+  "momos",
+  "garlic",
+  "green chillies",
+  "spring onion",
+  "light soy sauce",
+  "sesame",
+  "rice vinegar",
+];
+
 const myDiv = document.getElementById("checklist");
 
 let checkbox = document.createElement("input");
 
-checkbox.type = "checkbox";
-checkbox.name = "name";
-checkbox.value = "value";
-checkbox.id = "id";
+function check(array) {
+  for (let i = 0; i < array.length; i++) {
+    let((checkbox = document.createElement("input")));
 
-var label = document.createElement("label");
+    checkbox.type = "checkbox";
+    checkbox.name = "name";
+    checkbox.value = "value";
+    checkbox.id = "id";
 
-label.htmlFor = "id";
+    var label = document.createElement("label");
 
-label.appendChild(document.createTextNode("creates label for checkbox"));
+    label.htmlFor = "id";
 
-myDiv.appendChild(checkbox);
-myDiv.appendChild(label);
+    label.appendChild(document.createTextNode(array[i]));
+
+    myDiv.appendChild(checkbox);
+    myDiv.appendChild(label);
+  }
+}
+
+check(foodList);
