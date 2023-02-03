@@ -56,6 +56,7 @@ img {
 .heading {
   padding-bottom: 40px;
   text-align: center;
+  padding: 40px;
 }
 
 form {
@@ -74,4 +75,24 @@ label {
 input {
   width: 40%;
   margin: 2%;
+}
+
+#selfie {
+  float: right;
+  margin: 50px;
+}
+
+.bioparagraph {
+  margin: 50px;
+}
+
+#secondpicture {
+  float: left;
+  margin: 50px;
+}
+
+.heading2 {
+  padding-bottom: 40px;
+  text-align: center;
+  padding: 40px;
 }
