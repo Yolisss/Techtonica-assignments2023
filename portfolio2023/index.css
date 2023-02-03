@@ -96,3 +96,16 @@ input {
   text-align: center;
   padding: 40px;
 }
+
+.social2 {
+  display: inline-block;
+  width: 115px;
+  height: 25px;
+  background: #4e9caf;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+}
