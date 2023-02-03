@@ -1,6 +1,7 @@
 /* why do we include ul in our navbar class. Is it because its easier to 
 target ul like this instead of creating classes for the ul or for each 
 indiv li  */
+/* ul gives overall structure of the navbar */
 .navbar ul {
   list-style: none;
   background-color: pink;
@@ -8,6 +9,14 @@ indiv li  */
   margin: 60px;
 }
 
+/* targets each link of the navbar */
 .navbar li {
   display: inline-block;
+}
+
+/* text-decoration removed the underline from the text */
+.navbar a {
+  text-decoration: none;
+  padding: 60px;
+  margin: 50px 50px 50px 50px;
 }
