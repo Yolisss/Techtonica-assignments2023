@@ -1,10 +1,16 @@
+body {
+  background-color: rgb(178, 191, 153);
+}
+
 /* why do we include ul in our navbar class. Is it because its easier to 
 target ul like this instead of creating classes for the ul or for each 
 indiv li  */
 /* ul gives overall structure of the navbar */
 .navbar ul {
   list-style: none;
-  background-color: pink;
+  border-style: ridge;
+  border-color: darkolivegreen;
+  background-color: rgb(178, 191, 153);
   padding: 30px;
   margin: 60px;
   text-align: center;
@@ -13,6 +19,7 @@ indiv li  */
 /* targets each link of the navbar */
 .navbar li {
   display: inline-block;
+  font-style: oblique;
 }
 
 /* text-decoration removed the underline from the text */
@@ -23,7 +30,29 @@ indiv li  */
 }
 
 .navbar a:hover {
-  background: purple;
+  background: rgb(14, 114, 64);
   padding: 30px;
   margin: 60px;
+}
+
+.introduction {
+  display: inline-block;
+  text-align: center;
+}
+
+img {
+  float: left;
+  margin: 50px;
+}
+
+.homeparagraph {
+  margin: 50px;
+  text-align: center;
+  padding-top: 150px;
+  font-style: oblique;
+}
+
+.heading {
+  padding-bottom: 40px;
+  text-align: center;
 }
