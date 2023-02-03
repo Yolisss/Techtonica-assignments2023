@@ -7,41 +7,51 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="navbar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <form>
-      <h1>Let's Connect!</h1>
-
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Your name" />
-      <small class="error"></small>
-
-      <label for="email">Email:</label>
-      <input type="text" id="email" placeholder="Your email" />
-      <small class="error"></small>
-
-      <label for="phone-number">Phone Number:</label>
-      <input type="text" id="phone-number" placeholder="Your Phone Number" />
-      <small class="error"></small>
-
-      <label for="address">Address:</label>
-      <input type="text" id="address" placeholder="Your Address" />
-      <small class="error"></small>
-
-      <label for="message">Message:</label>
-      <input type="text" id="message" placeholder="Your Message" />
-      <small class="error"></small>
-
-      <div>
-        <input type="submit" value="Send Messae" />
-        <p id="success"></p>
+    <div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </form>
-    <script src="script.js"></script>
+      <form>
+        <h1>Let's Connect!</h1>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your name" />
+          <small class="error"></small>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Your email" />
+          <small class="error"></small>
+        </div>
+        <div>
+          <label for="phone-number">Phone Number:</label>
+          <input
+            type="text"
+            id="phone-number"
+            placeholder="Your Phone Number"
+          />
+          <small class="error"></small>
+        </div>
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" id="address" placeholder="Your Address" />
+          <small class="error"></small>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <input type="text" id="message" placeholder="Your Message" />
+          <small class="error"></small>
+        </div>
+        <div>
+          <input type="submit" value="Send Messae" />
+          <p id="success"></p>
+        </div>
+      </form>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
