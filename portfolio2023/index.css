@@ -1,0 +1,8 @@
+/* why do we include ul in our navbar class. Is it because its easier to 
+target ul like this instead of creating classes for the ul or for each 
+indiv li  */
+.navbar ul {
+  list-style: none;
+  background-color: pink;
+  padding: 10px;
+}
