@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div>
+    <div class="container">
       <div class="navbar">
         <ul>
           <li><a href="#">Home</a></li>
@@ -15,19 +15,19 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <form>
+      <form id="sendmessage" class="form">
         <h1>Let's Connect!</h1>
-        <div>
+        <div class="form-field">
           <label for="name">Name:</label>
           <input type="text" id="name" placeholder="Your name" />
           <small class="error"></small>
         </div>
-        <div>
+        <div class="form-field">
           <label for="email">Email:</label>
           <input type="text" id="email" placeholder="Your email" />
           <small class="error"></small>
         </div>
-        <div>
+        <div class="form-field">
           <label for="phone-number">Phone Number:</label>
           <input
             type="text"
@@ -36,18 +36,18 @@
           />
           <small class="error"></small>
         </div>
-        <div>
+        <div class="form-field">
           <label for="address">Address:</label>
           <input type="text" id="address" placeholder="Your Address" />
           <small class="error"></small>
         </div>
-        <div>
+        <div class="form-field">
           <label for="message">Message:</label>
           <input type="text" id="message" placeholder="Your Message" />
           <small class="error"></small>
         </div>
-        <div>
-          <input type="submit" value="Send Messae" />
+        <div class="form-field">
+          <input id="submit" type="submit" value="sendmessage" />
           <p id="success"></p>
         </div>
       </form>
