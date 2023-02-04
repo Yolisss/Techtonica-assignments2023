@@ -1,9 +1,9 @@
 let button = document.querySelector("button");
 
-let color = "pink";
-button.addEventListener("click", () => {
-  color.style.backgroundColor = "pink";
-});
+// let color = "pink";
+// button.addEventListener("click", () => {
+//   color.style.backgroundColor = "pink";
+// });
 
 //DOM ON CHECKLIST
 
@@ -28,20 +28,25 @@ const foodList = [
 
 const myDiv = document.getElementById("checklist");
 
-let checkbox = document.createElement("input");
-
 function check(array) {
   for (let i = 0; i < array.length; i++) {
     let checkbox = document.createElement("input");
 
     checkbox.type = "checkbox";
-    checkbox.name = "name";
-    checkbox.value = "value";
-    checkbox.id = "id";
+    //use when you submit a form inthe backend,
+    //which form field do you want to get information from
+    checkbox.name = "foodName";
+    checkbox.value = array[i];
+    //manolo(or any other name you'd like to call it) is like a prefix to the id
+    //you can also write it as: checkbox.id = `checkbox-${i}`
+    //this allows to give a unique id to each element instead of printing id each time
+    //the element iterates through the loop
+    checkbox.id = `checkout-${i}`;
 
     var label = document.createElement("label");
 
-    label.htmlFor = "id";
+    //label needs to know what checkout is being tied to
+    label.htmlFor = `checkout-${i}`;
 
     label.appendChild(document.createTextNode(array[i]));
 
