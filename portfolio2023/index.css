@@ -109,3 +109,16 @@ input {
   font-weight: bold;
   line-height: 25px;
 }
+#linksgroupedtogether {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 844) {
+  width: 100%;
+}
+
+@media (min-width: 390) {
+  body{
+    background-color: pink;
+} ;
