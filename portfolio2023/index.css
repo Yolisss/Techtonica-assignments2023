@@ -9,7 +9,7 @@ indiv li  */
 .navbar ul {
   list-style: none;
   border-style: ridge;
-  border-color: darkolivegreen;
+  border-color: #556b2f;
   background-color: rgb(178, 191, 153);
   padding: 30px;
   margin: 60px;
@@ -56,4 +56,43 @@ img {
 .heading {
   padding-bottom: 40px;
   text-align: center;
+  padding: 40px;
+}
+
+form {
+  text-align: center;
+  padding: 80px;
+  margin: 180px;
+  background-color: rgb(139, 164, 104);
+  opacity: 0.7;
+}
+
+label {
+  display: block;
+  padding: 10px;
+}
+
+input {
+  width: 40%;
+  margin: 2%;
+}
+
+#selfie {
+  float: right;
+  margin: 50px;
+}
+
+.bioparagraph {
+  margin: 50px;
+}
+
+#secondpicture {
+  float: left;
+  margin: 50px;
+}
+
+.heading2 {
+  padding-bottom: 40px;
+  text-align: center;
+  padding: 40px;
 }
