@@ -7,38 +7,57 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="navbar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <form>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <form id="sendmessage" class="form">
         <h1>Let's Connect!</h1>
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your name" />
-        <small class="error"></small>
-
-        <label for="email">Email:</label>
-        <input type="text" id="email" placeholder="Your email" />
-        <small class="error"></small>
-
-        <label for="phone-number">Phone Number:</label>
-        <input type="text" id="phone-number" placeholder="Your Phone Number" />
-        <small class="error"></small>
-
-        <label for="address">Address:</label>
-        <input type="text" id="address" placeholder="Your Address" />
-        <small class="error"></small>
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your name" />
-        <small class="error"></small>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your name" />
+          <small class="error"></small>
+        </div>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Your email" />
+          <small class="error"></small>
+        </div>
+        <div class="form-field">
+          <label for="phone-number">Phone Number:</label>
+          <input
+            type="text"
+            id="phone-number"
+            placeholder="Your Phone Number"
+          />
+          <small class="error"></small>
+        </div>
+        <div class="form-field">
+          <label for="address">Address:</label>
+          <input type="text" id="address" placeholder="Your Address" />
+          <small class="error"></small>
+        </div>
+        <div class="form-field">
+          <label for="message">Message:</label>
+          <input type="text" id="message" placeholder="Your Message" />
+          <small class="error"></small>
+        </div>
+        <div class="form-field">
+          <input id="submit" type="submit" value="sendmessage" />
+          <p id="success"></p>
+        </div>
       </form>
+      <a href="https://www.linkedin.com/in/yolisma-zacarias4/" class="social2"
+        >linkedin</a
+      >
+      <a href="https://github.com/Yolisss" class="social2">Github</a>
+      <script src="script.js"></script>
+      <a href="https://twitter.com/Yolissss_" class="social2">Twitter</a>
+      <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
