@@ -15,7 +15,7 @@ class Event {
   //class however it is not displaying on my browswer
   //also, in my console, I am getting document is not defined
   addAvailableTickets(nameOfTicketType, priceOfTicketType) {
-    const ticketInfo = new ticketInfo(nameOfTicketType, priceOfTicketType);
+    let ticketInfo = new ticketInfo(nameOfTicketType, priceOfTicketType);
     this.availableTickets.push(ticketInfo);
     console.log(availableTickets);
   }
