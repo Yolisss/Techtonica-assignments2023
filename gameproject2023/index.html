@@ -15,12 +15,13 @@
       <div>
         <h3>Enter Your Guess Here:</h3>
         <form>
-          <input />
-          <button id="submit">Submit</button>
+          <input id="guessInput" />
+          <!-- value is giving that specific attribute a  -->
+          <input type="submit" id="submitGuess" value="submit" />
         </form>
         <div>
           <h3 class="guessalreadymadetitle">Guesses Already Made:</h3>
-          <div class="guessbox"></div>
+          <div class="guessbox"><span id="randomguesses"></span></div>
         </div>
       </div>
     </div>

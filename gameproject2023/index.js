@@ -16,18 +16,59 @@
 let winningNumber = Math.floor(Math.random() * 10 + 1);
 //created variable to hold value when user makes a wrong
 //guess
+console.log(winningNumber);
 let wrongAnswers = [];
 
-//fetching the submit button by fetching the its id 'submit'
-let fetchSubmit = document.getElementById("submit");
-document.addEventListener("click", mysteryNumber);
-
-function mysteryNumber(usersGuess) {
-  //click.preventDefault();
-  if (usersGuess != winningNumber) {
-    wrongAnswers.push("usersGuess");
-    return "Sorry, try again";
+document.getElementById("submitGuess").onclick = function (e) {
+  e.preventDefault();
+  let userGuess = document.getElementById("guessInput").value;
+  //get the users guess
+  //comparing if guess != winning num
+  if (userGuess < winningNumber) {
+    wrongAnswers.push(userGuess);
+    console.log(wrongAnswers);
+    document.getElementById("randomguesses").innerHTML += userGuess + "," + " ";
+    alert("guess higher");
+  } else if (userGuess > winningNumber) {
+    wrongAnswers.push(userGuess);
+    console.log(wrongAnswers);
+    document.getElementById("randomguesses").innerHTML += userGuess + "," + " ";
+    alert("guess lower");
+  } else {
+    alert("winner!");
+    window.location.reload(true);
   }
-}
+};
 
-mysteryNumber();
+//ex winning num = 5
+//guess 1
+//tell user to guess higher
+//if(userGuess < winningNumber){
+//alert('guess higher);
+//}
+
+//ex winning num = 5
+//guess 8
+//tell user to guess lower
+//if(userGuess > winningNumber){
+//alert('guess lo);
+//}
+
+//fetching the submit button by fetching the its id 'submit'
+// let fetchSubmit = document.getElementById("submit");
+// document.addEventListener("click", mysteryNumber);
+
+// let userInput = document.getElementById("guessInput").value;
+
+// function mysteryNumber(userInput) {
+//   //userInput.preventDefault();
+//   if (userInput != winningNumber) {
+//     wrongAnswers.push(userInput);
+//     //return "Sorry, try again";
+//     alert("sorry, try again");
+//   } else {
+//     alert("you got it right");
+//   }
+// }
+
+// mysteryNumber(userInput);
