@@ -21,6 +21,9 @@ let wrongAnswers = [];
 
 document.getElementById("submitGuess").onclick = function (e) {
   e.preventDefault();
+  let userPopUpMessage = document.querySelector("#mysteryNumber");
+  console.log(userPopUpMessage);
+
   let userGuess = document.getElementById("guessInput").value;
   //get the users guess
   //comparing if guess != winning num
@@ -28,14 +31,14 @@ document.getElementById("submitGuess").onclick = function (e) {
     wrongAnswers.push(userGuess);
     console.log(wrongAnswers);
     document.getElementById("randomguesses").innerHTML += userGuess + "," + " ";
-    alert("guess higher");
+    userPopUpMessage.innerHTML = "Sorry, guess higher";
   } else if (userGuess > winningNumber) {
     wrongAnswers.push(userGuess);
     console.log(wrongAnswers);
     document.getElementById("randomguesses").innerHTML += userGuess + "," + " ";
-    alert("guess lower");
+    userPopUpMessage.innerHTML = "Sorry, guess lower";
   } else {
-    alert("winner!");
+    userPopUpMessage.innerHTML = "Sorry, guess higher";
     window.location.reload(true);
   }
 };
