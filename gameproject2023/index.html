@@ -4,18 +4,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess My Number</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="container">
+    <div class="container" id="container">
       <h1>Guess My Number</h1>
-      <div class="card">?</div>
+      <div class="card">
+        <p>?</p>
+      </div>
       <div>
-        <h2>Enter Your Guess Here:</h2>
+        <h3>Enter Your Guess Here:</h3>
         <form>
           <input />
           <button>Submit</button>
         </form>
+        <div>
+          <h3 class="guessalreadymadetitle">Guesses Already Made:</h3>
+          <div class="guessbox"></div>
+        </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
