@@ -25,6 +25,9 @@ document.getElementById("submitGuess").onclick = function (e) {
   console.log(userPopUpMessage);
 
   let userGuess = document.getElementById("guessInput").value;
+
+  let reset = document.getElementById("resetButton");
+
   //get the users guess
   //comparing if guess != winning num
   if (userGuess < winningNumber) {
@@ -38,7 +41,7 @@ document.getElementById("submitGuess").onclick = function (e) {
     document.getElementById("randomguesses").innerHTML += userGuess + "," + " ";
     userPopUpMessage.innerHTML = "Sorry, guess lower";
   } else {
-    userPopUpMessage.innerHTML = "Sorry, guess higher";
+    userPopUpMessage.innerHTML = "Winner, Winner, Chicken Dinner!";
     window.location.reload(true);
   }
 };
