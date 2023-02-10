@@ -34,12 +34,12 @@ document.getElementById("submitGuess").onclick = function (e) {
     wrongAnswers.push(userGuess);
     console.log(wrongAnswers);
     document.getElementById("randomguesses").innerHTML += userGuess + "," + " ";
-    userPopUpMessage.innerHTML = "Sorry, guess higher";
+    userPopUpMessage.innerHTML = "Oof so close, guess higher";
   } else if (userGuess > winningNumber) {
     wrongAnswers.push(userGuess);
     console.log(wrongAnswers);
     document.getElementById("randomguesses").innerHTML += userGuess + "," + " ";
-    userPopUpMessage.innerHTML = "Sorry, guess lower";
+    userPopUpMessage.innerHTML = "Oof so close, guess lower";
   } else {
     userPopUpMessage.innerHTML = "Winner, Winner, Chicken Dinner!";
     //added classList.toggle

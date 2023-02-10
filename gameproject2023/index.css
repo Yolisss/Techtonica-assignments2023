@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(215, 226, 234);
+  background-image: url("https://files.123freevectors.com/wp-content/original/206107-beige-blue-and-pink-numbers-background-graphic.jpg");
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   border-radius: 100px;
   background-color: rgb(141, 214, 245);
   color: rgb(230, 216, 235);
-  opacity: 0.5;
+  opacity: 0.8;
   border-style: solid;
 }
 
@@ -25,6 +25,10 @@ body {
   padding: 50px;
   border-radius: 25px;
   color: black;
+  background-color: white;
+  /* background-color: rgb(139, 206, 227); */
+  color: rgb(120, 188, 199);
+  border-color: white;
 }
 .visible {
   display: none;
@@ -55,12 +59,6 @@ body {
   background-color: white;
   padding: 4px;
   border-radius: 9px;
-}
-
-.card {
-  background-color: rgb(139, 206, 227);
-  color: rgb(120, 188, 199);
-  border-color: white;
 }
 
 #resetButton {
