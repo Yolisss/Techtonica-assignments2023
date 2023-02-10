@@ -84,3 +84,20 @@ body {
 /* rgb(233, 175, 233) */
 /* 
 cute blue color:  rgb(100, 174, 208) */
+/* anything 390 OR SMALLER will be pink*/
+@media (max-width: 390px) {
+  body {
+    background-color: pink;
+    width: 50%;
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+/* anything 844 OR SMALLER will be red */
+/* @media (max-width: 844px) {
+  body {
+    background-color: red;
+  }
+} */
