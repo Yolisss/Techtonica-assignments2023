@@ -12,3 +12,6 @@ body {
   height: 50px;
   display: inline-block;
 }
+.visible {
+  display: none;
+}

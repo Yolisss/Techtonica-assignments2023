@@ -26,7 +26,7 @@ document.getElementById("submitGuess").onclick = function (e) {
 
   let userGuess = document.getElementById("guessInput").value;
 
-  let reset = document.getElementById("resetButton");
+  let reset = document.getElementById("resetElement");
 
   //get the users guess
   //comparing if guess != winning num
@@ -42,8 +42,16 @@ document.getElementById("submitGuess").onclick = function (e) {
     userPopUpMessage.innerHTML = "Sorry, guess lower";
   } else {
     userPopUpMessage.innerHTML = "Winner, Winner, Chicken Dinner!";
-    window.location.reload(true);
+    //added classList.toggle
+    //"visible" = calls the css in the project
+    reset.classList.toggle("visible");
+    //console.log(reset);
+    //window.location.reload(true);
   }
+};
+
+document.getElementById("resetButton").onclick = function (e) {
+  window.location.reload(true);
 };
 
 //ex winning num = 5
