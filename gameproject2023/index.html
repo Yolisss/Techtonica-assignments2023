@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h1 class="guessTitles">Guess My Number</h1>
+      <div class="card">
+        <p class="guessholder"><span id="mysterynumber">?</span></p>
+      </div>
+      <div>
+        <h3 class="guessTitles">Enter Your Guess Here:</h3>
+        <form>
+          <input id="guessInput" />
+          <!-- value is giving that specific attribute a  -->
+          <!-- //type helped us create a submit button(in this case) in order to accept
+          //data from the user 
+          //submit takes the info from the user and takes it back to 
+          //to the same page itself(by default) since we don't have a sever
+          //or api to store the info  -->
+          <input type="submit" id="submitGuess" value="submit" />
+        </form>
+      <div>
+        <h3 class="guessTitles">Guesses Already Made:</h3>
+        <div class="card"><span id="randomguesses"></span></div>
+      </div>
+      <div id="resetElement" class="visible">
+        <button id="resetButton">Reset</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

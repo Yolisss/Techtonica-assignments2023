@@ -1,0 +1,103 @@
+html {
+  background-image: url("https://files.123freevectors.com/wp-content/original/206107-beige-blue-and-pink-numbers-background-graphic.jpg");
+}
+
+body {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 150px;
+  border-radius: 100px;
+  background-color: rgb(141, 214, 245);
+  color: rgb(230, 216, 235);
+  opacity: 0.8;
+  border-style: solid;
+}
+
+.container {
+  margin: 100px;
+}
+
+.card {
+  border-style: solid;
+  display: inline-block;
+  padding: 50px;
+  border-radius: 25px;
+  color: black;
+  background-color: white;
+  /* background-color: rgb(139, 206, 227); */
+  color: rgb(120, 188, 199);
+  border-color: white;
+}
+.visible {
+  display: none;
+}
+
+.guessholder {
+  text-align: center;
+}
+.guessbox {
+  text-align: center;
+  border-style: solid;
+  padding: 50px;
+  border-radius: 25px;
+  margin: 40px;
+}
+
+#resetButton {
+  margin: 50px;
+  font-size: 15px;
+}
+
+.guessTitles {
+  text-shadow: 10px 10px 10px rgb(43, 146, 190);
+  color: black;
+}
+
+#submitGuess {
+  background-color: white;
+  padding: 4px;
+  border-radius: 9px;
+}
+
+#resetButton {
+  background-color: white;
+  padding: 4px;
+  border-radius: 9px;
+}
+
+.guessTitles {
+  padding: 20px;
+  color: white;
+}
+
+#mysterynumber {
+  color: black;
+  font-size: 20px;
+}
+
+#randomguesses {
+  color: black;
+  font-size: 20px;
+}
+/* rgb(233, 175, 233) */
+/* 
+cute blue color:  rgb(100, 174, 208) */
+/* anything 390 OR SMALLER will be pink*/
+@media (max-width: 390px) {
+  body {
+    background-color: pink;
+    width: 50%;
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+/* anything 844 OR SMALLER will be red */
+/* @media (max-width: 844px) {
+  body {
+    background-color: red;
+  }
+} */
