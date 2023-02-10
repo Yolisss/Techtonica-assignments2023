@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(233, 146, 207);
+  background-color: rgb(215, 226, 234);
 }
 
 body {
@@ -9,9 +9,10 @@ body {
   justify-content: center;
   margin: 150px;
   border-radius: 100px;
-  background-color: rgb(229, 174, 220);
+  background-color: rgb(141, 214, 245);
   color: rgb(230, 216, 235);
   opacity: 0.5;
+  border-style: solid;
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
   display: inline-block;
   padding: 50px;
   border-radius: 25px;
+  color: black;
 }
 .visible {
   display: none;
@@ -45,7 +47,7 @@ body {
 }
 
 .guessTitles {
-  text-shadow: 10px 10px 10px rgb(199, 41, 133);
+  text-shadow: 10px 10px 10px rgb(43, 146, 190);
   color: black;
 }
 
@@ -56,7 +58,9 @@ body {
 }
 
 .card {
-  background-color: rgb(189, 127, 178);
+  background-color: rgb(139, 206, 227);
+  color: rgb(120, 188, 199);
+  border-color: white;
 }
 
 #resetButton {
@@ -67,6 +71,18 @@ body {
 
 .guessTitles {
   padding: 20px;
+  color: white;
 }
 
+#mysterynumber {
+  color: black;
+  font-size: 30px;
+}
+
+#randomguesses {
+  color: black;
+  font-size: 30px;
+}
 /* rgb(233, 175, 233) */
+/* 
+cute blue color:  rgb(100, 174, 208) */
