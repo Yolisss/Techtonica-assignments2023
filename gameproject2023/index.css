@@ -1,17 +1,72 @@
+html {
+  background-color: rgb(233, 146, 207);
+}
+
 body {
   text-align: center;
-  border-style: solid;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 150px;
+  border-radius: 100px;
+  background-color: rgb(229, 174, 220);
+  color: rgb(230, 216, 235);
+  opacity: 0.5;
+}
+
+.container {
+  margin: 100px;
 }
 
 .card {
   border-style: solid;
-  width: 50px;
-  height: 50px;
   display: inline-block;
+  padding: 50px;
+  border-radius: 25px;
 }
 .visible {
   display: none;
 }
+
+.guessholder {
+  text-align: center;
+}
+.guessbox {
+  text-align: center;
+  border-style: solid;
+  padding: 50px;
+  border-radius: 25px;
+  margin: 40px;
+}
+
+#resetButton {
+  margin: 50px;
+  font-size: 15px;
+}
+
+.guessTitles {
+  text-shadow: 10px 10px 10px rgb(199, 41, 133);
+  color: black;
+}
+
+#submitGuess {
+  background-color: white;
+  padding: 4px;
+  border-radius: 9px;
+}
+
+.card {
+  background-color: rgb(189, 127, 178);
+}
+
+#resetButton {
+  background-color: white;
+  padding: 4px;
+  border-radius: 9px;
+}
+
+.guessTitles {
+  padding: 20px;
+}
+
+/* rgb(233, 175, 233) */

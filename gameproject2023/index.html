@@ -8,12 +8,12 @@
   </head>
   <body>
     <div class="container" id="container">
-      <h1>Guess My Number</h1>
+      <h1 class="guessTitles">Guess My Number</h1>
       <div class="card">
-        <p><span id="mysterynumber">?</span></p>
+        <p class="guessholder"><span id="mysterynumber">?</span></p>
       </div>
       <div>
-        <h3>Enter Your Guess Here:</h3>
+        <h3 class="guessTitles">Enter Your Guess Here:</h3>
         <form>
           <input id="guessInput" />
           <!-- value is giving that specific attribute a  -->
@@ -25,8 +25,8 @@
           <input type="submit" id="submitGuess" value="submit" />
         </form>
         <div>
-          <h3 class="guessalreadymadetitle">Guesses Already Made:</h3>
-          <div class="guessbox"><span id="randomguesses"></span></div>
+          <h3 class="guessTitles">Guesses Already Made:</h3>
+          <div class="card"><span id="randomguesses"></span></div>
         </div>
         <div id="resetElement" class="visible">
           <button id="resetButton">Reset</button>
