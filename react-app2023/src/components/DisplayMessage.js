@@ -1,4 +1,4 @@
-function Game(props) {
+function Game() {
   return (
     <div>
       <div className="card">
