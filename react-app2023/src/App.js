@@ -10,12 +10,18 @@ function App() {
     console.log(userGuess);
   };
 
+  let handleWinningNumber = (winningNumber) => {
+    console.log(winningNumber);
+  };
+
   return (
     <div className="App">
       <DisplayMessage greeting="Hello" />
+      {/* whenever you're calling the callback for the "on" prop
+      that name will start with the word*/}
       <Form onUserGuess={handleUserGuess} />
       <UsersGuess />
-      <WinningNumber />
+      <WinningNumber onWinningNumber={handleWinningNumber} />
     </div>
   );
 }
