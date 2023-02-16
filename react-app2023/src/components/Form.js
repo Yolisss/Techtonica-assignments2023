@@ -1,7 +1,14 @@
 import React from "react";
 
 export default function Form() {
-  return <div></div>;
+  return (
+    <div>
+      <form>
+        <input type="number" />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
 }
 
 //create form
