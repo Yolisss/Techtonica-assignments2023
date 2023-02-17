@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import UsersGuess from "./UsersGuess";
 
 export default function Form(props) {
   let [input, setInput] = useState("");
@@ -20,7 +22,9 @@ export default function Form(props) {
     <div>
       <form onSubmit={handleSubmit}>
         <input type="number" value={input} onChange={ChangedValue} />
-        <button type="submit">Submit</button>
+        <button type="submit" onClick={UsersGuess}>
+          Submit
+        </button>
       </form>
     </div>
   );

@@ -4,14 +4,19 @@ import DisplayMessage from "./components/DisplayMessage";
 import Form from "./components/Form";
 import UsersGuess from "./components/UsersGuess";
 import WinningNumber from "./components/WinningNumber";
+import { useState } from "react";
 
 function App() {
-  let handleUserGuess = (userGuess) => {
-    console.log(userGuess);
+  const [userGuess, setUserGuess] = useState("");
+
+  const [winningNumber, setWinningNumber] = useState("");
+
+  const handleUserGuess = (guess) => {
+    setUserGuess(guess);
   };
 
-  let handleWinningNumber = (winningNumber) => {
-    console.log(winningNumber);
+  const handleWinningNumber = (winning) => {
+    setWinningNumber(winning);
   };
 
   return (
@@ -20,7 +25,7 @@ function App() {
       {/* whenever you're calling the callback for the "on" prop
       that name will start with the word*/}
       <Form onUserGuess={handleUserGuess} />
-      <UsersGuess />
+      <UsersGuess winning={winningNumber} guess={userGuess} />
       <WinningNumber onWinningNumber={handleWinningNumber} />
     </div>
   );
