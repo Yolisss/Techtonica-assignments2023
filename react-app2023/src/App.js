@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <DisplayMessage greeting="Hello" />
+      <DisplayMessage greeting="Hello" message={handleUserGuess} />
       {/* whenever you're calling the callback for the "on" prop
       that name will start with the word*/}
       <Form onUserGuess={handleUserGuess} />

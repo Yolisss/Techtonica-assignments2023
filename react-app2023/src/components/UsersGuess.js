@@ -7,7 +7,9 @@ export default function UsersGuess(props) {
   //let [guess, setGuess] = useState("");
 
   let CompareGuesses = () => {
-    if (props.guess > props.winning) {
+    if (props.guess === "") {
+      return "?";
+    } else if (props.guess > props.winning) {
       return "Ooff, so close. Guess lower";
       //console.log("Ooff, so close. Guess lower");
     } else if (props.guess < props.winning) {
@@ -18,7 +20,7 @@ export default function UsersGuess(props) {
       //console.log("Winner, Winner, Chicken Dinner!");
     }
   };
-  return <div>{CompareGuesses()}</div>;
+  return <div className="guess">{CompareGuesses()}</div>;
 }
 
 //check if rand num being generated

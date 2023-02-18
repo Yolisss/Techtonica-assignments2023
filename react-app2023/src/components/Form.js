@@ -20,8 +20,8 @@ export default function Form(props) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="number" value={input} onChange={ChangedValue} />
+      <form className="form" onSubmit={handleSubmit}>
+        <input type="text" value={input} onChange={ChangedValue} />
         <button type="submit" onClick={UsersGuess}>
           Submit
         </button>
