@@ -12,6 +12,12 @@ app.use(cors());
 //reusable in the future or make it easy to access or update
 const PORT = 5001;
 
+//set up simple route that will handle GET request to the root
+//path of our api
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 //START instance of express
 //by default, ports are closed, in order to have it open, you need to have something
 //listening to it
