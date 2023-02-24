@@ -39,6 +39,8 @@ app.get("/api/books/:bookID", async (req, res) => {
   }
 });
 
+app.post("/api/books", (req, res) => {});
+
 //reusable in the future or make it easy to access or update
 const PORT = 5003;
 
