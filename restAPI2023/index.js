@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/books", (req, res) => {
-  res.json(books);
+  res.json(BOOKS);
 });
 
 //reusable in the future or make it easy to access or update
