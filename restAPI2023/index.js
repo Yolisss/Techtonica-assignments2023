@@ -28,6 +28,17 @@ app.get("/api/books", (req, res) => {
   res.json(BOOKS);
 });
 
+app.get("/api/books/:bookID", async (req, res) => {
+  //represents the obj that will be returned with the specific
+  //data we're asking for
+  let requestedBook = req.params.bookID;
+  for (let book of BOOKS) {
+    if (book.isbn === requestedBook) {
+      res.json(book);
+    }
+  }
+});
+
 //reusable in the future or make it easy to access or update
 const PORT = 5003;
 
