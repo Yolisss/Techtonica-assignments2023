@@ -2,6 +2,7 @@
 //you are buying the ikea furniture (comes w instruc)
 const express = require("express");
 const cors = require("cors");
+const fetch = require("node-fetch");
 //loading up your env variables
 //opening .env file and loading variables into your runtime execution
 require("dotenv").config();
@@ -25,16 +26,6 @@ app.use(cors());
 //the body
 app.use(express.json());
 
-const loadCity = () => {
-  fetch("http://localhost:8080/api/weather")
-    .then((response) => response.json())
-    .then((result) => {
-      //console.log(result)
-      setCity(result.weather[0].name);
-      setResult(result);
-    });
-};
-
 // creates an endpoint for the route /api
 app.get("/", (req, res) => {
   res.json({ message: "Hello from My template ExpressJS" });
@@ -51,9 +42,10 @@ app.get("/api/weather", (req, res) => {
   //exist by default in terminal
   let key = process.env.API_KEY;
   let city = req.query.city;
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
-  )
+  console.log(city);
+  let URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
+  console.log(URL);
+  fetch(URL)
     //what code do you want to execute when that fetch is finished
     //.then executes once the fetch has been resolved
     //i get the respond back essentially as a string
@@ -61,7 +53,7 @@ app.get("/api/weather", (req, res) => {
     //.json returns another promise
     .then((response) => response.json())
     .then((result) => {
-      //console.log(result)
+      console.log(result);
       result.name;
       result.weather[0].icon;
       result.main.temp;
@@ -69,6 +61,7 @@ app.get("/api/weather", (req, res) => {
       result.wind.speed;
       //it is returning that result obj as a json response
       //that can then be used by the front end
+      //result defining new obj from api
       res.json({
         name: result.name,
         icon: result.weather[0].icon,
