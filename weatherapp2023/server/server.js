@@ -57,6 +57,9 @@ app.get("/api/weather", (req, res) => {
       result.name;
       result.weather[0].icon;
       result.main.temp;
+      result.main.feels_like;
+      result.main.temp_min;
+      result.main.temp_max;
       result.main.humidity;
       result.wind.speed;
       //it is returning that result obj as a json response
@@ -66,6 +69,9 @@ app.get("/api/weather", (req, res) => {
         name: result.name,
         icon: result.weather[0].icon,
         temp: result.main.temp,
+        feels_like: result.main.feels_like,
+        min: result.main.temp_min,
+        max: result.main.temp_max,
         humidity: result.main.humidity,
         windspeed: result.wind.speed,
       });
