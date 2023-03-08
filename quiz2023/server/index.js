@@ -4,7 +4,7 @@ import cors from "cors";
 import fetch from "node-fetch";
 
 // For testing my API I saving one response in a .js file
-import fakedata from "./fakedata.js";
+//import fakedata from "./fakedata.js";
 
 const app = express();
 const PORT = 7001;
@@ -25,7 +25,35 @@ app.get("/", (req, res) => {
 
 // //hardcode the game response for testing reasons to don't saturate my API call.
 app.get("/api/game", (req, res) => {
-  res.json(fakedata);
+  let URL = `https://opentdb.com/api.php?amount=10&category=22&difficulty=medium&type=multiple`;
+  //fetch(URL);
+  console.log(URL);
+  //what code do you want to execute when that fetch is finished
+  //.then executes once the fetch has been resolved
+  //i get the respond back essentially as a string
+  //json converts string to actual object
+  //.json returns another promise
+  fetch(URL)
+    //what code do you want to execute when that fetch is finished
+    //.then executes once the fetch has been resolved
+    //i get the respond back essentially as a string
+    //json converts string to actual object
+    //.json returns another promise
+    .then((response) => response.json())
+    .then((result) => {
+      console.log(result);
+      result.questions;
+      result.category;
+      result.difficulty;
+      //it is returning that result obj as a json response
+      //that can then be used by the front end
+      //result defining new obj from api
+      res.json({
+        Question: result.questions,
+        category: result.category,
+        difficulty: result.difficulty,
+      });
+    });
 });
 
 app.listen(PORT, () =>
