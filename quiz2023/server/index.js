@@ -34,18 +34,12 @@ app.get("/api/game", (req, res) => {
   //json converts string to actual object
   //.json returns another promise
   fetch(URL)
-    //what code do you want to execute when that fetch is finished
-    //.then executes once the fetch has been resolved
-    //i get the respond back essentially as a string
-    //json converts string to actual object
-    //.json returns another promise
-    //parsing =
     //json is looking at the string response from the URL
     //and parses(converting) the string to an obj
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      data.results;
+      //data.results;
       //it is returning that result obj as a json response
       //that can then be used by the front end
       //result defining new obj from api
