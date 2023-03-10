@@ -7,7 +7,7 @@ import fetch from "node-fetch";
 //import fakedata from "./fakedata.js";
 
 const app = express();
-const PORT = 7001;
+const PORT = 7010;
 
 // Configuring cors middleware
 app.use(cors());
