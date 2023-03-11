@@ -19,7 +19,7 @@ const Game = (props) => {
   //callback, dependency arr
   //callback => whatever you want executed as part of the effect
   //dependency arr => if empty, callback will be executed once
-  //after the initial render of that component once, and once only
+  //after the initial render of that component; once, and once only
   //if dep arr contains any variables inside of it
   //callback will be executed if anytime any of the elem inside
   //arr change (or have their values changed)
